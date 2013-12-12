@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="CubeModel.js"></script>
+		<script src="CubeCaptcha.js"></script>
+		<script src="jquery-1.10.2.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				getCaptchaImage();
+			});
+		</script>
+	</head>
+	<body>
+		<form>
+			<div id="rubiksCaptcha">
+				<img id="cube" src=""> <br>
+				<input id="op1" type="radio" name="turn" value="">
+				<input id="op2" type="radio" name="turn" value="">
+				<input id="op3" type="radio" name="turn" value="">
+			</div>
+			<input type="button" value="Submit" onclick="submitForm(this.form)">
+		</form>
+	</body>
+</html>
